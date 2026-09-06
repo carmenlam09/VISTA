@@ -1,0 +1,34 @@
+1. What is the opportunity?
+Know Your Vendor (KYV) screening is one of the Bank's most important controls against regulatory, financial crime, reputational, and operational risks. Every vendor onboarding or renewal requires reviewers to assess vendors, directors, shareholders, and beneficial owners across multiple data sources before a business decision can be made.
+However, the current KW process is heavily dependent on manual research. Reviewers spend significant time searching across CTOS, NetBeveal adverse news sources, and public records, then manually validating findings, assessing materiality, and compiling reports. A large portion of the effort is spent distinguishing true risks from false positives rather than performing actual risk assessment.
+As vendor ecosystems continue to grow and regulatory expectations become more stringent, this operating model is becoming increasingly difficult to scale. Highly skilled reviewers are spending their time gathering and reconciling information instead of applying judgement, challenging risk indicators, and supporting better business decisions.
+The opportunity is not simply to automate KYV activities. The opportunity is to fundamentally reimagine how vendor due diligence is performed at OCBC by shifting from a search-and-report model to a risk intelligence model, where AI performs the heavy lifting of data gathering, correlation, and analysis, while people focus on decision-making and governance.
+By transforming how vendor risk assessments are conducted, OCBC can achieve faster onboarding, more consistent risk outcomes, improved audit readiness, and a scalable operating model that supports growth without a corresponding increase in manual effort. Today, our people spend time searching for risks. Tomorrow, they should spend time managing risks.
+
+2. What is the proposed solution?
+
+VISTA (Vendor Intelligence Screening & Trust Assessment), an Al-powered Vendor Risk Intelligence Platform that transforms vendor due diligence from a manual screening exercise into a proactive, intelligence-led process. VISTA acts as the central orchestrator, bringing together AI, Data, Digital workflow and Automation across the KYV journey. Instead of reviewers manually searching, validating, assessing and drafting, VISTA automates repetitive steps, applies AI where judgement support is needed, and presents reviewers with structured risk intelligence for Maker-Checker validation.
+
+Module 1. Digital Intake & Entity Extraction
+The Digital Intake & Entity Extraction Engine uses Al-powered document understanding to automatically identify vendors, directors, shareholders, UBOs, and related parties from SSM reports, Supplier Registration Forms, and vendor confirmation letters. Structured data is extracted and digitised at source, creating a unified vendor profile for downstream screening and due diligence activities.
+
+Module 2. Unified Screening Intelligence View
+The Screening Intelligence Hub brings together screening information from CTOs, NetReveal previous KYV reviews, adverse news sources, and public records into a single intelligence view. Automated data aggregation and Al-generated summaries eliminate the need for reviewers to navigate multiple systems to build a complete
+vendor risk picture.
+
+Module 3. Adverse Media Screening Engine
+The Adverse Media Screening Engine leverages AI to analyse adverse news and public intelligence sources using approved keyword libraries and risk taxonomies. Findings are automatically categorised into relevant risk themes such as financial crime, sanctions, fraud, regulatory breaches, tax offences, ESG concerns, and operational risks.
+
+Module 4. False Positive & True Hit Triage
+The Risk Signal Intelligence Engine uses Al-driven entity resolution, contextual reasoning, and pattern analysis to distinguish genuine risks from false positives. By evaluating attributes such as name variations, nationality, ownership structures, corporate relationships, and historical screening outcomes, it generates confidence scores and prioritises findings that warrant human review. This enables reviewers to focus on risk judgement and decision-making rather than manual verification.
+
+Module 5. Risk Assessment & EDD Recommendation Confidential
+The Risk Assessment Engine evaluates screening findings against KYV policies and governance standards to generate draft risk assessments, materiality justifications, and EDD recommendations. AI provides a consistent first-line assessment and explainable rationale, enabling reviewers to make faster and better-informed decisions while retaining final accountability.
+
+Module 6. GEN Al Smart KYV Report Generation
+The Smart Report Generation Engine transforms screening findings, risk assessments, and supporting evidence into approval-ready KYV reports aligned to existing templates. Generative Al automatically drafts risk narratives and justifications, significantly reducing report preparation effort while improving consistency and audit readiness.
+
+Module 7. Vendor Risk Knowledge Repository
+The Vendor Risk Knowledge Repository serves as the Bank's growing source of institutional intelligence by capturing historical KYV reviews, adverse news assessments, false-positive decisions, EDD outcomes, and approval records. Al-assisted knowledge retrieval enables future reviews to leverage past assessments  instead of repeating the same investigations.
+
+ Instead of spending time searching, verifying, compiling, and documenting information, reviewers focus on validating Al-generated insights, exercising professional judgement, and making informed risk decisions through the existing Maker-Checker framework, transforms KYV into a digital risk intelligence ecosystem, where automation handles the repetitive work,
