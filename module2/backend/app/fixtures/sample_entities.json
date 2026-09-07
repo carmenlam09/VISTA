@@ -1,0 +1,110 @@
+[
+  {
+    "entity_id": "vendor:1",
+    "entity_type": "vendor",
+    "legal_name": "Meridian Logistics Sdn Bhd",
+    "aliases": ["Meridian Logistics"],
+    "id_numbers": [{"type": "SSM_NO", "value": "199001012345"}],
+    "nationality": "Malaysia",
+    "date_of_incorporation_or_birth": "1990-03-14",
+    "related_entities": [
+      {"entity_id": "director:1", "relationship": "has_director"},
+      {"entity_id": "shareholder:3", "relationship": "has_shareholder"}
+    ]
+  },
+  {
+    "entity_id": "vendor:2",
+    "entity_type": "vendor",
+    "legal_name": "Golden Harvest Trading Co",
+    "aliases": [],
+    "id_numbers": [{"type": "SSM_NO", "value": "200512034567"}],
+    "nationality": "Malaysia",
+    "date_of_incorporation_or_birth": "2005-11-02",
+    "related_entities": [
+      {"entity_id": "director:2", "relationship": "has_director"}
+    ]
+  },
+  {
+    "entity_id": "vendor:4",
+    "entity_type": "vendor",
+    "legal_name": "Zenith Capital Holdings Ltd",
+    "aliases": ["Zenith Capital", "ZCH Ltd"],
+    "id_numbers": [{"type": "SSM_NO", "value": "201309087654"}],
+    "nationality": "Singapore",
+    "date_of_incorporation_or_birth": "2013-09-08",
+    "related_entities": [
+      {"entity_id": "ubo:1", "relationship": "has_ubo"}
+    ]
+  },
+  {
+    "entity_id": "vendor:5",
+    "entity_type": "vendor",
+    "legal_name": "Riverstone Engineering Sdn Bhd",
+    "aliases": [],
+    "id_numbers": [{"type": "SSM_NO", "value": "199812098765"}],
+    "nationality": "Malaysia",
+    "date_of_incorporation_or_birth": "1998-12-09",
+    "related_entities": [
+      {"entity_id": "director:2", "relationship": "has_director"}
+    ]
+  },
+  {
+    "entity_id": "vendor:9",
+    "entity_type": "vendor",
+    "legal_name": "Clearwater Consulting Sdn Bhd",
+    "aliases": [],
+    "id_numbers": [{"type": "SSM_NO", "value": "201701023344"}],
+    "nationality": "Malaysia",
+    "date_of_incorporation_or_birth": "2017-01-02",
+    "related_entities": []
+  },
+  {
+    "entity_id": "director:1",
+    "entity_type": "director",
+    "legal_name": "Tan Wei Ming",
+    "aliases": [],
+    "id_numbers": [{"type": "NRIC", "value": "780512-08-5566"}],
+    "nationality": "Malaysia",
+    "date_of_incorporation_or_birth": "1978-05-12",
+    "related_entities": [
+      {"entity_id": "vendor:1", "relationship": "director_of"}
+    ]
+  },
+  {
+    "entity_id": "director:2",
+    "entity_type": "director",
+    "legal_name": "Priya Ramasamy",
+    "aliases": [],
+    "id_numbers": [{"type": "NRIC", "value": "820930-14-2210"}],
+    "nationality": "Malaysia",
+    "date_of_incorporation_or_birth": "1982-09-30",
+    "related_entities": [
+      {"entity_id": "vendor:2", "relationship": "director_of"},
+      {"entity_id": "vendor:5", "relationship": "director_of"}
+    ]
+  },
+  {
+    "entity_id": "shareholder:3",
+    "entity_type": "shareholder",
+    "legal_name": "Harborview Investments Pte Ltd",
+    "aliases": [],
+    "id_numbers": [{"type": "SSM_NO", "value": "201045011122"}],
+    "nationality": "Singapore",
+    "date_of_incorporation_or_birth": "2010-04-05",
+    "related_entities": [
+      {"entity_id": "vendor:1", "relationship": "shareholder_of"}
+    ]
+  },
+  {
+    "entity_id": "ubo:1",
+    "entity_type": "ubo",
+    "legal_name": "Richard Koh Boon Huat",
+    "aliases": [],
+    "id_numbers": [{"type": "PASSPORT", "value": "K3345671"}],
+    "nationality": "Singapore",
+    "date_of_incorporation_or_birth": "1965-02-18",
+    "related_entities": [
+      {"entity_id": "vendor:4", "relationship": "ubo_of"}
+    ]
+  }
+]
