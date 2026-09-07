@@ -1,49 +1,20 @@
-# VISTA Module 1
+# VISTA
 
-Digital Intake & Entity Extraction Engine for Vendor Intelligence Screening & Trust Assessment.
+Vendor Intelligence Screening & Trust Assessment — an AI-powered Vendor Risk Intelligence Platform for a bank's Know Your Vendor (KYV) process, built module by module.
 
-## Features
+## Modules
 
-- Multiple PDF, DOCX, and TXT uploads
-- Native PDF extraction with `pdfplumber` and scanned PDF OCR with `easyocr`
-- Gemini extraction when `GEMINI_API_KEY` is configured, with deterministic local fallback
-- Consolidated and deduplicated vendor profiles
-- Editable Streamlit validation tables
-- Normalized SQLite persistence for vendors, directors, shareholders, UBOs, and related parties
-- Search by vendor name or registration number
+- [`module1/`](module1/README.md) — Digital Intake & Entity Extraction Engine. Streamlit app that extracts vendor/director/shareholder/UBO profiles from uploaded documents and persists them to SQLite.
+- [`module2/`](module2/README.md) — Screening Intelligence Hub. Aggregates CTOS, NetReveal, prior KYV reviews, adverse news, and public records into one unified per-entity view with an AI-generated, source-attributed summary.
 
-## Setup
+Each module has its own README with setup instructions, its own dependency manifest, and runs independently. Module 2 reads Module 1's entity profiles as a read-only input; it does not modify or depend on Module 1's internals.
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-streamlit run app.py
+## Repository layout
+
 ```
-
-Open the URL printed by Streamlit. The sidebar contains Document Upload, Validation, and Vendor Repository.
-
-For Gemini mode, configure the API key before launching:
-
-```powershell
-$env:GEMINI_API_KEY = "your-key"
+vista/
+├── module1/     # Digital Intake & Entity Extraction (Streamlit + SQLite)
+├── module2/     # Screening Intelligence Hub (FastAPI + React + Postgres)
+├── docs/        # Cross-module specs and prompts
+└── README.md    # this file
 ```
-
-Without the key, the app uses the included local extractor. This is useful for development and offline demos, but production use should configure the approved AI endpoint and add review/audit controls.
-
-## Database
-
-The database is created at `database/vista.db` on first use. The schema is in `database/schema.sql`. Each save creates a vendor record and its associated entity records. SQLite foreign keys cascade entity cleanup when a vendor is removed.
-
-## Sample data
-
-`sample_data/sample_vendor.txt` can be uploaded to verify the full workflow.
-
-## Project structure
-
-- `app.py`: landing page and Streamlit configuration
-- `pages/`: upload, validation, and repository screens
-- `services/`: extraction, AI, profile-building, and database services
-- `repositories/`: repository adapters for each entity family
-- `models/`: typed domain dataclasses
-- `database/`: schema and generated SQLite database
