@@ -1,0 +1,142 @@
+[
+  {
+    "result_id": "fixture-result-v1-ctos",
+    "entity_id": "vendor:fixture-1",
+    "source": "ctos",
+    "status": "ok",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hit_count": 1,
+    "hits": [
+      {
+        "hit_id": "hit-v1-ctos-1",
+        "title": "Winding-up petition on record",
+        "description": "CTOS records an active winding-up petition against Meridian Capital Holdings Sdn Bhd.",
+        "hit_date": "2025-02-14",
+        "risk_categories": ["financial_crime", "operational"],
+        "confidence": "high",
+        "raw": {"credit_score": 320, "petition_status": "active"}
+      }
+    ],
+    "source_metadata": {"credit_score": 320, "report_type": "business"}
+  },
+  {
+    "result_id": "fixture-result-v1-public",
+    "entity_id": "vendor:fixture-1",
+    "source": "public_records",
+    "status": "ok",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hit_count": 1,
+    "hits": [
+      {
+        "hit_id": "hit-v1-public-1",
+        "title": "Outstanding tax arrears",
+        "description": "Public tax registry lists outstanding arrears for Meridian Capital Holdings Sdn Bhd.",
+        "hit_date": "2025-01-08",
+        "risk_categories": ["tax"],
+        "confidence": "high",
+        "raw": {"registry": "Tax Authority Registry", "arrears_status": "outstanding"}
+      }
+    ],
+    "source_metadata": {"registries_checked": ["Tax Authority Registry"]}
+  },
+  {
+    "result_id": "fixture-result-v1-priorkyv",
+    "entity_id": "vendor:fixture-1",
+    "source": "prior_kyv",
+    "status": "ok",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hit_count": 1,
+    "hits": [
+      {
+        "hit_id": "hit-v1-priorkyv-1",
+        "title": "Prior KYV review: escalated",
+        "description": "A previous KYV review of Meridian Capital Holdings Sdn Bhd was escalated to compliance and did not conclude with an approval.",
+        "hit_date": "2024-09-15",
+        "risk_categories": ["regulatory_breach"],
+        "confidence": "high",
+        "raw": {"outcome": "escalated", "reviewer": "internal"}
+      }
+    ],
+    "source_metadata": {"prior_review_count": 1}
+  },
+  {
+    "result_id": "fixture-result-d1-netreveal",
+    "entity_id": "director:fixture-1",
+    "source": "netreveal",
+    "status": "ok",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hit_count": 1,
+    "hits": [
+      {
+        "hit_id": "hit-d1-netreveal-1",
+        "title": "Sanctions list match",
+        "description": "Tan Wei Meng matches an entry on the OFAC Specially Designated Nationals list. Nationality on record: Malaysia.",
+        "hit_date": "2025-01-20",
+        "risk_categories": ["sanctions", "financial_crime"],
+        "confidence": "high",
+        "raw": {"matched_list": "OFAC SDN", "name_similarity": 0.83}
+      }
+    ],
+    "source_metadata": {"watchlists_checked": ["OFAC SDN"]}
+  },
+  {
+    "result_id": "fixture-result-d1-public",
+    "entity_id": "director:fixture-1",
+    "source": "public_records",
+    "status": "ok",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hit_count": 1,
+    "hits": [
+      {
+        "hit_id": "hit-d1-public-1",
+        "title": "Civil litigation on record",
+        "description": "Court registry shows an active civil suit naming Tan Wei Ming as a party. Registered address: Kuching, Sarawak. Nationality: Indonesia.",
+        "hit_date": "2025-03-01",
+        "risk_categories": ["operational"],
+        "confidence": "medium",
+        "raw": {"registry": "Court Records", "case_status": "active"}
+      }
+    ],
+    "source_metadata": {"registries_checked": ["Court Records"]}
+  },
+  {
+    "result_id": "fixture-result-vc-ctos",
+    "entity_id": "vendor:fixture-conditions",
+    "source": "ctos",
+    "status": "ok",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hit_count": 1,
+    "hits": [
+      {
+        "hit_id": "hit-vc-ctos-1",
+        "title": "Adverse credit event",
+        "description": "Silverline Trading Co reported 2 late-payment defaults in the last 24 months.",
+        "hit_date": "2024-11-02",
+        "risk_categories": ["financial_crime"],
+        "confidence": "medium",
+        "raw": {"credit_score": 540, "defaults": 2}
+      }
+    ],
+    "source_metadata": {"credit_score": 540, "report_type": "business"}
+  },
+  {
+    "result_id": "fixture-result-vc-priorkyv",
+    "entity_id": "vendor:fixture-conditions",
+    "source": "prior_kyv",
+    "status": "ok",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hit_count": 1,
+    "hits": [
+      {
+        "hit_id": "hit-vc-priorkyv-1",
+        "title": "Prior KYV review: approved with conditions",
+        "description": "A previous KYV review of Silverline Trading Co was approved subject to enhanced monitoring conditions.",
+        "hit_date": "2024-06-01",
+        "risk_categories": ["operational"],
+        "confidence": "high",
+        "raw": {"outcome": "approved_with_conditions", "reviewer": "internal"}
+      }
+    ],
+    "source_metadata": {"prior_review_count": 1}
+  }
+]

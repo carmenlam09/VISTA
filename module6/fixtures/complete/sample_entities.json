@@ -1,0 +1,13 @@
+[
+  {
+    "entity_id": "vendor:report-complete",
+    "entity_type": "vendor",
+    "legal_name": "Meridian Capital Holdings Sdn Bhd",
+    "aliases": ["Meridian Capital"],
+    "id_numbers": [{"type": "SSM_NO", "value": "199001012345"}],
+    "nationality": "Malaysia",
+    "related_entities": [
+      {"entity_id": "director:report-complete-1", "relationship": "has_director"}
+    ]
+  }
+]

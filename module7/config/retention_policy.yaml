@@ -1,0 +1,34 @@
+# ============================================================================
+# PLACEHOLDER RETENTION POLICY — NOT CONFIRMED WITH COMPLIANCE
+#
+# These retain_days values are sensible-looking placeholders (roughly
+# aligned to common multi-year regulatory record-keeping expectations), NOT
+# figures confirmed with the bank's actual compliance/legal function. Every
+# retrieval response's `disclaimer` field and this file's `is_placeholder:
+# true` flag exist specifically so this can't be missed downstream.
+#
+# BEFORE THIS MODULE IS USED FOR ANYTHING REAL: replace these values with
+# retention periods confirmed by compliance, and set `is_placeholder: false`.
+# See module7/README.md.
+# ============================================================================
+#
+# retain_days is how long a record stays in normal day-to-day retrieval
+# results after its `timestamp` (the underlying event date, not ingestion
+# date). Once older, it's excluded from default search results — but never
+# deleted, and always retrievable with `include_archived: true`.
+
+version: "1.0-placeholder"
+is_placeholder: true
+default_retain_days: 2555   # ~7 years
+
+record_types:
+  kyv_review:
+    retain_days: 2555        # ~7 years
+  adverse_news_assessment:
+    retain_days: 1825        # ~5 years
+  false_positive_decision:
+    retain_days: 2555        # ~7 years — high-value signal for future triage, kept as long as reviews
+  edd_outcome:
+    retain_days: 2555        # ~7 years
+  approval_record:
+    retain_days: 3650        # ~10 years — final approvals kept longest

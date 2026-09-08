@@ -1,0 +1,56 @@
+[
+  {
+    "result_id": "fixture-result-nomatch-ctos",
+    "hits": [
+      {
+        "hit_id": "hit-nomatch-1",
+        "risk_categories": []
+      }
+    ]
+  },
+  {
+    "result_id": "fixture-result-overlap-netreveal",
+    "hits": [
+      {
+        "hit_id": "hit-overlap-1",
+        "risk_categories": ["sanctions"]
+      }
+    ]
+  },
+  {
+    "result_id": "fixture-result-excluded-ctos",
+    "hits": [
+      {
+        "hit_id": "hit-excluded-1",
+        "risk_categories": ["financial_crime"]
+      }
+    ]
+  },
+  {
+    "result_id": "fixture-result-excluded-public",
+    "hits": [
+      {
+        "hit_id": "hit-excluded-2",
+        "risk_categories": ["regulatory_breach"]
+      }
+    ]
+  },
+  {
+    "result_id": "fixture-result-taxvendor-public",
+    "hits": [
+      {
+        "hit_id": "hit-taxvendor-1",
+        "risk_categories": ["tax_offence"]
+      }
+    ]
+  },
+  {
+    "result_id": "fixture-result-taxdirector-public",
+    "hits": [
+      {
+        "hit_id": "hit-taxdirector-1",
+        "risk_categories": ["tax_offence"]
+      }
+    ]
+  }
+]

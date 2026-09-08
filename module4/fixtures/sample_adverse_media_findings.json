@@ -1,0 +1,21 @@
+[
+  {
+    "finding_id": "fixture-finding-v1-adverse-1",
+    "entity_id": "vendor:fixture-1",
+    "themes": ["operational"],
+    "severity": "medium",
+    "confidence": "medium",
+    "rationale": "Matched keyword 'governance concerns' in \"Regional Firm Faces Scrutiny Over Governance Concerns\": A company linked to director Tan Wei Ming is facing scrutiny over governance concerns following an internal review.",
+    "matched_keywords": ["governance concerns"],
+    "source_hit": {
+      "result_id": "fixture-result-v1-adverse",
+      "hit_id": "hit-v1-adverse-1",
+      "headline": "Regional Firm Faces Scrutiny Over Governance Concerns",
+      "publication": "Regional Business Daily",
+      "publish_date": "2025-04-02",
+      "url": "https://example.com/articles/governance-concerns",
+      "excerpt": "A company linked to director Tan Wei Ming is facing scrutiny over governance concerns following an internal review."
+    },
+    "generator": "deterministic-fallback"
+  }
+]

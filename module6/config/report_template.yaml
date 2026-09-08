@@ -1,0 +1,62 @@
+# ============================================================================
+# PLACEHOLDER TEMPLATE — NOT THE BANK'S REAL KYV REPORT TEMPLATE
+#
+# No real template or sample past KYV report was available in this repo or
+# provided when Module 6 was built. This is a clearly-labeled, sensibly-
+# structured placeholder so the rest of the module (aggregation, AI
+# narrative, document generation, traceability) can be built and tested now.
+#
+# BEFORE THIS MODULE IS USED FOR ANYTHING REAL: replace this file's
+# `sections` with the bank's actual template structure, and update
+# `app/services/document_generator.py`'s per-section rendering to match the
+# real template's layout/house style. See module6/README.md.
+# ============================================================================
+#
+# Each section:
+#   section_id:  stable id, referenced by document_generator.py and the
+#                traceability manifest
+#   title:       section heading as it appears in the generated document
+#   type:        metadata | narrative | structured | narrative_plus_table |
+#                table | narrative_plus_list — tells document_generator.py
+#                how to render this section's content
+
+version: "1.0-placeholder"
+title: "Know Your Vendor (KYV) Risk Assessment Report"
+is_placeholder: true
+
+sections:
+  - section_id: report_header
+    title: "Report Header"
+    type: metadata
+
+  - section_id: executive_summary
+    title: "Executive Summary"
+    type: narrative
+
+  - section_id: entity_profile
+    title: "Entity Profile"
+    type: structured
+
+  - section_id: screening_findings_summary
+    title: "Screening Findings Summary"
+    type: narrative_plus_table
+
+  - section_id: adverse_media_findings
+    title: "Adverse Media Findings"
+    type: narrative_plus_table
+
+  - section_id: triage_summary
+    title: "Triage Summary"
+    type: table
+
+  - section_id: risk_assessment
+    title: "Risk Assessment & Materiality Justification"
+    type: narrative
+
+  - section_id: edd_recommendation
+    title: "Enhanced Due Diligence (EDD) Recommendation"
+    type: narrative_plus_list
+
+  - section_id: sign_off
+    title: "Reviewer Sign-Off"
+    type: metadata

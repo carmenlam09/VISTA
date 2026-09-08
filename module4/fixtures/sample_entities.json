@@ -1,0 +1,54 @@
+[
+  {
+    "entity_id": "vendor:fixture-1",
+    "entity_type": "vendor",
+    "legal_name": "Meridian Capital Holdings Sdn Bhd",
+    "aliases": ["Meridian Capital Holdings", "Meridian Capital"],
+    "id_numbers": [{"type": "SSM_NO", "value": "199001012345"}],
+    "nationality": "Malaysia",
+    "related_entities": [
+      {"entity_id": "director:fixture-1", "relationship": "has_director"},
+      {"entity_id": "shareholder:fixture-1", "relationship": "has_shareholder"}
+    ]
+  },
+  {
+    "entity_id": "director:fixture-1",
+    "entity_type": "director",
+    "legal_name": "Tan Wei Ming",
+    "aliases": [],
+    "id_numbers": [{"type": "NRIC", "value": "780512-08-5566"}],
+    "nationality": "Malaysia",
+    "related_entities": [
+      {"entity_id": "vendor:fixture-1", "relationship": "director_of"}
+    ]
+  },
+  {
+    "entity_id": "shareholder:fixture-1",
+    "entity_type": "shareholder",
+    "legal_name": "Harborview Investments Pte Ltd",
+    "aliases": [],
+    "id_numbers": [{"type": "SSM_NO", "value": "201045011122"}],
+    "nationality": "Singapore",
+    "related_entities": [
+      {"entity_id": "vendor:fixture-1", "relationship": "shareholder_of"}
+    ]
+  },
+  {
+    "entity_id": "vendor:fixture-clean",
+    "entity_type": "vendor",
+    "legal_name": "Clearbrook Consulting Pte Ltd",
+    "aliases": [],
+    "id_numbers": [{"type": "SSM_NO", "value": "201701023344"}],
+    "nationality": "Singapore",
+    "related_entities": []
+  },
+  {
+    "entity_id": "vendor:fixture-conditions",
+    "entity_type": "vendor",
+    "legal_name": "Silverline Trading Co",
+    "aliases": [],
+    "id_numbers": [{"type": "SSM_NO", "value": "201209076655"}],
+    "nationality": "Malaysia",
+    "related_entities": []
+  }
+]

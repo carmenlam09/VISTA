@@ -1,0 +1,101 @@
+# VISTA Module 3 — Adverse Media Keyword Library & Risk Taxonomy
+#
+# Owned by compliance/risk staff, not engineering. Edit this file directly to
+# add keywords or adjust theme mappings — no code changes needed.
+#
+# Each keyword entry:
+#   phrase:          the word/phrase to match (case-insensitive, matched as
+#                     substring against each hit's headline + excerpt)
+#   themes:          one or more risk themes this phrase signals (see the
+#                     `themes` list below for the allowed values)
+#   negation_guard:  phrases that, if present in the same hit, mean this
+#                     match is not risk-relevant wrongdoing by the entity
+#                     itself (victim framing, exoneration, plaintiff not
+#                     defendant) — a match with a negation cue present is
+#                     suppressed from findings rather than flagged as risk
+#   notes:           optional free text for reviewers (not used by matching)
+
+version: "1.0"
+
+themes:
+  financial_crime: "Money laundering, terrorist financing, corruption, bribery"
+  sanctions: "Sanctions list matches, export control violations, dealings with sanctioned parties"
+  fraud: "Fraud, embezzlement, forgery, Ponzi/pyramid schemes"
+  regulatory_breach: "Regulatory fines, license revocations, compliance breaches, court judgments"
+  tax_offence: "Tax evasion, tax fraud, undisclosed offshore structures"
+  esg: "Environmental violations, labor/human rights abuses, governance failures"
+  operational: "Data breaches, insolvency/winding-up, executive misconduct, major litigation"
+
+keywords:
+  - phrase: "money laundering"
+    themes: [financial_crime]
+    negation_guard: ["victim of", "cleared of", "acquitted of", "no evidence of", "falsely accused of"]
+
+  - phrase: "bribery"
+    themes: [financial_crime, regulatory_breach]
+    negation_guard: ["victim of", "whistleblower", "reported the", "cleared of"]
+
+  - phrase: "corruption"
+    themes: [financial_crime, regulatory_breach]
+    negation_guard: ["anti-corruption", "cleared of", "acquitted of"]
+
+  - phrase: "sanctions list"
+    themes: [sanctions]
+
+  - phrase: "OFAC"
+    themes: [sanctions]
+
+  - phrase: "export control violation"
+    themes: [sanctions, regulatory_breach]
+
+  - phrase: "embezzlement"
+    themes: [fraud, financial_crime]
+    negation_guard: ["victim of", "uncovered the", "reported the", "whistleblower"]
+
+  - phrase: "ponzi scheme"
+    themes: [fraud, financial_crime]
+
+  - phrase: "fraud investigation"
+    themes: [fraud]
+    negation_guard: ["victim of", "target of", "reported the", "cleared of", "no evidence of"]
+
+  - phrase: "forgery"
+    themes: [fraud]
+    negation_guard: ["victim of"]
+
+  - phrase: "regulatory fine"
+    themes: [regulatory_breach]
+
+  - phrase: "regulatory breach"
+    themes: [regulatory_breach]
+
+  - phrase: "license revoked"
+    themes: [regulatory_breach, operational]
+
+  - phrase: "tax evasion"
+    themes: [tax_offence]
+    negation_guard: ["cleared of", "acquitted of", "no evidence of"]
+
+  - phrase: "offshore account"
+    themes: [tax_offence]
+
+  - phrase: "environmental violation"
+    themes: [esg]
+
+  - phrase: "labor rights"
+    themes: [esg]
+    notes: "Often appears in positive coverage too (e.g. 'improved labor rights record') — rely on the AI categorizer for tone, not just the phrase match."
+
+  - phrase: "data breach"
+    themes: [operational]
+
+  - phrase: "winding-up petition"
+    themes: [operational, financial_crime]
+
+  - phrase: "insolvency"
+    themes: [operational]
+
+  - phrase: "class action lawsuit"
+    themes: [operational, regulatory_breach]
+    negation_guard: ["filed by", "on behalf of"]
+    notes: "'filed by'/'on behalf of' this entity means it's the plaintiff, not the defendant."

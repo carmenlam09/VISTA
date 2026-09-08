@@ -1,0 +1,10 @@
+[
+  {
+    "entity_id": "vendor:fixture-single",
+    "themes": ["esg"],
+    "source_hit": {
+      "headline": "Greenfield Agritech Faces Labor Rights Scrutiny",
+      "excerpt": "An NGO report raised labor rights concerns at a Greenfield Agritech Sdn Bhd facility."
+    }
+  }
+]

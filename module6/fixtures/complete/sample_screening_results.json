@@ -1,0 +1,53 @@
+[
+  {
+    "result_id": "fixture-report-complete-ctos",
+    "entity_id": "vendor:report-complete",
+    "source": "ctos",
+    "status": "ok",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hit_count": 1,
+    "hits": [
+      {
+        "hit_id": "hit-complete-ctos-1",
+        "title": "Winding-up petition on record",
+        "description": "CTOS records an active winding-up petition against Meridian Capital Holdings Sdn Bhd.",
+        "hit_date": "2025-02-14",
+        "risk_categories": ["financial_crime"],
+        "confidence": "high",
+        "raw": {"credit_score": 320}
+      }
+    ],
+    "source_metadata": {}
+  },
+  {
+    "result_id": "fixture-report-complete-netreveal",
+    "entity_id": "vendor:report-complete",
+    "source": "netreveal",
+    "status": "ok",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hit_count": 1,
+    "hits": [
+      {
+        "hit_id": "hit-complete-netreveal-1",
+        "title": "Sanctions list match",
+        "description": "Meridian Capital Holdings Sdn Bhd matches an entry on the OFAC Specially Designated Nationals list.",
+        "hit_date": "2025-01-15",
+        "risk_categories": ["sanctions"],
+        "confidence": "high",
+        "raw": {}
+      }
+    ],
+    "source_metadata": {}
+  },
+  {
+    "result_id": "fixture-report-complete-public",
+    "entity_id": "vendor:report-complete",
+    "source": "public_records",
+    "status": "error",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hit_count": 0,
+    "hits": [],
+    "source_metadata": {},
+    "error_message": "Registry service timed out"
+  }
+]
