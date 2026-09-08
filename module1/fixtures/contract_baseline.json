@@ -1,0 +1,272 @@
+{
+  "sample_vendor_txt": {
+    "raw_extraction": {
+      "vendor_name": "Meridian Supplies Sdn. Bhd.",
+      "registration_number": "202001012345",
+      "country": "Malaysia",
+      "address": "Level 12, Menara Meridian, Kuala Lumpur, Malaysia",
+      "directors": [
+        {
+          "director_name": "Aisha Rahman (Malaysian)",
+          "nationality": ""
+        },
+        {
+          "director_name": "Daniel Tan (Malaysian)",
+          "nationality": ""
+        }
+      ],
+      "shareholders": [
+        {
+          "shareholder_name": "Meridian Holdings Berhad",
+          "ownership_percentage": 60.0
+        },
+        {
+          "shareholder_name": "Aisha Rahman",
+          "ownership_percentage": 40.0
+        }
+      ],
+      "ubo": [
+        {
+          "ubo_name": "Aisha Rahman",
+          "ownership_percentage": 40.0
+        }
+      ],
+      "related_parties": [
+        {
+          "related_party_name": "Meridian Logistics Sdn. Bhd. (subsidiary)",
+          "relationship_type": ""
+        }
+      ]
+    },
+    "built_profile": {
+      "vendor_name": "Meridian Supplies Sdn. Bhd.",
+      "registration_number": "202001012345",
+      "country": "Malaysia",
+      "address": "Level 12, Menara Meridian, Kuala Lumpur, Malaysia",
+      "directors": [
+        {
+          "director_name": "Aisha Rahman (Malaysian)",
+          "nationality": ""
+        },
+        {
+          "director_name": "Daniel Tan (Malaysian)",
+          "nationality": ""
+        }
+      ],
+      "shareholders": [
+        {
+          "shareholder_name": "Meridian Holdings Berhad",
+          "ownership_percentage": 60.0
+        },
+        {
+          "shareholder_name": "Aisha Rahman",
+          "ownership_percentage": 40.0
+        }
+      ],
+      "ubo": [
+        {
+          "ubo_name": "Aisha Rahman",
+          "ownership_percentage": 40.0
+        }
+      ],
+      "related_parties": [
+        {
+          "related_party_name": "Meridian Logistics Sdn. Bhd. (subsidiary)",
+          "relationship_type": ""
+        }
+      ]
+    },
+    "persisted_and_reread": {
+      "vendor_id": 1,
+      "vendor_name": "Meridian Supplies Sdn. Bhd.",
+      "registration_number": "202001012345",
+      "country": "Malaysia",
+      "address": "Level 12, Menara Meridian, Kuala Lumpur, Malaysia",
+      "created_date": "2026-09-08 12:44:56",
+      "directors": [
+        {
+          "director_id": 1,
+          "vendor_id": 1,
+          "director_name": "Aisha Rahman (Malaysian)",
+          "nationality": ""
+        },
+        {
+          "director_id": 2,
+          "vendor_id": 1,
+          "director_name": "Daniel Tan (Malaysian)",
+          "nationality": ""
+        }
+      ],
+      "shareholders": [
+        {
+          "shareholder_id": 1,
+          "vendor_id": 1,
+          "shareholder_name": "Meridian Holdings Berhad",
+          "ownership_percentage": 60.0
+        },
+        {
+          "shareholder_id": 2,
+          "vendor_id": 1,
+          "shareholder_name": "Aisha Rahman",
+          "ownership_percentage": 40.0
+        }
+      ],
+      "ubo": [
+        {
+          "ubo_id": 1,
+          "vendor_id": 1,
+          "ubo_name": "Aisha Rahman",
+          "ownership_percentage": 40.0
+        }
+      ],
+      "related_parties": [
+        {
+          "related_party_id": 1,
+          "vendor_id": 1,
+          "related_party_name": "Meridian Logistics Sdn. Bhd. (subsidiary)",
+          "relationship_type": ""
+        }
+      ]
+    }
+  },
+  "ssm_sample_pdf": {
+    "raw_extraction": {
+      "vendor_name": "BIG DATAWORKS SDN. BHD.",
+      "registration_number": "201101006232(934369-T)",
+      "country": "MALAYSIA",
+      "address": "10 JALAN RAJA\nALANG BANGSAR\nKUALA LUMPUR\nWILAYAH PERSEKUTUAN\nPoskod 59000",
+      "directors": [
+        {
+          "director_name": "SHERIZA BIN ZAKARIA",
+          "nationality": ""
+        }
+      ],
+      "shareholders": [
+        {
+          "shareholder_name": "Nama : BIG DATAWORKS SDN. BHD.",
+          "ownership_percentage": null,
+          "shares": 1000000.0
+        }
+      ],
+      "ubo": [],
+      "related_parties": []
+    },
+    "built_profile": {
+      "vendor_name": "BIG DATAWORKS SDN. BHD.",
+      "registration_number": "201101006232(934369-T)",
+      "country": "MALAYSIA",
+      "address": "10 JALAN RAJA\nALANG BANGSAR\nKUALA LUMPUR\nWILAYAH PERSEKUTUAN\nPoskod 59000",
+      "directors": [
+        {
+          "director_name": "SHERIZA BIN ZAKARIA",
+          "nationality": ""
+        }
+      ],
+      "shareholders": [
+        {
+          "shareholder_name": "Nama : BIG DATAWORKS SDN. BHD.",
+          "ownership_percentage": null,
+          "shares": 1000000.0
+        }
+      ],
+      "ubo": [],
+      "related_parties": []
+    },
+    "persisted_and_reread": {
+      "vendor_id": 2,
+      "vendor_name": "BIG DATAWORKS SDN. BHD.",
+      "registration_number": "201101006232(934369-T)",
+      "country": "MALAYSIA",
+      "address": "10 JALAN RAJA\nALANG BANGSAR\nKUALA LUMPUR\nWILAYAH PERSEKUTUAN\nPoskod 59000",
+      "created_date": "2026-09-08 12:44:56",
+      "directors": [
+        {
+          "director_id": 3,
+          "vendor_id": 2,
+          "director_name": "SHERIZA BIN ZAKARIA",
+          "nationality": ""
+        }
+      ],
+      "shareholders": [
+        {
+          "shareholder_id": 3,
+          "vendor_id": 2,
+          "shareholder_name": "Nama : BIG DATAWORKS SDN. BHD.",
+          "ownership_percentage": null
+        }
+      ],
+      "ubo": [],
+      "related_parties": []
+    }
+  },
+  "ssm_unmasked_report_pdf": {
+    "raw_extraction": {
+      "vendor_name": "BIG DATAWORKS SDN. BHD.",
+      "registration_number": "201101006232 (934369-T)",
+      "country": "MALAYSIA",
+      "address": "10 JALAN RAJA ALANG\nP\nBANGSAR\nKUALA LUMPUR\nWILAYAH PERSEKUTUAN\nPoskod : 59000",
+      "directors": [
+        {
+          "director_name": "SHERIZA BIN ZAKARIA",
+          "nationality": ""
+        }
+      ],
+      "shareholders": [
+        {
+          "shareholder_name": "PUNCAK SEMANGAT TECHNOLOGY SDN. BHD.",
+          "ownership_percentage": null,
+          "shares": 1000000.0
+        }
+      ],
+      "ubo": [],
+      "related_parties": []
+    },
+    "built_profile": {
+      "vendor_name": "BIG DATAWORKS SDN. BHD.",
+      "registration_number": "201101006232 (934369-T)",
+      "country": "MALAYSIA",
+      "address": "10 JALAN RAJA ALANG\nP\nBANGSAR\nKUALA LUMPUR\nWILAYAH PERSEKUTUAN\nPoskod : 59000",
+      "directors": [
+        {
+          "director_name": "SHERIZA BIN ZAKARIA",
+          "nationality": ""
+        }
+      ],
+      "shareholders": [
+        {
+          "shareholder_name": "PUNCAK SEMANGAT TECHNOLOGY SDN. BHD.",
+          "ownership_percentage": null,
+          "shares": 1000000.0
+        }
+      ],
+      "ubo": [],
+      "related_parties": []
+    },
+    "persisted_and_reread": {
+      "vendor_id": 3,
+      "vendor_name": "BIG DATAWORKS SDN. BHD.",
+      "registration_number": "201101006232 (934369-T)",
+      "country": "MALAYSIA",
+      "address": "10 JALAN RAJA ALANG\nP\nBANGSAR\nKUALA LUMPUR\nWILAYAH PERSEKUTUAN\nPoskod : 59000",
+      "created_date": "2026-09-08 12:44:56",
+      "directors": [
+        {
+          "director_id": 4,
+          "vendor_id": 3,
+          "director_name": "SHERIZA BIN ZAKARIA",
+          "nationality": ""
+        }
+      ],
+      "shareholders": [
+        {
+          "shareholder_id": 4,
+          "vendor_id": 3,
+          "shareholder_name": "PUNCAK SEMANGAT TECHNOLOGY SDN. BHD.",
+          "ownership_percentage": null
+        }
+      ],
+      "ubo": [],
+      "related_parties": []
+    }
+  }
+}
