@@ -1,0 +1,92 @@
+[
+  {
+    "entity_id": "vendor:demo-highrisk",
+    "legal_name": "Meridian Capital Holdings Sdn Bhd",
+    "aliases": ["Meridian Capital Holdings", "Meridian Capital"],
+    "result_id": "fixture-result-highrisk",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hits": [
+      {
+        "hit_id": "hit-1",
+        "headline": "Meridian Capital Holdings Sdn Bhd Investigated for Money Laundering",
+        "excerpt": "Regulators have opened a money laundering investigation into Meridian Capital Holdings Sdn Bhd following suspicious transaction reports filed by its bankers.",
+        "publish_date": "2025-03-10",
+        "publication": "Regional Business Daily",
+        "url": "https://example.com/articles/a1",
+        "source_confidence": "high"
+      },
+      {
+        "hit_id": "hit-2",
+        "headline": "Money Laundering Probe Opened Into Meridian Capital Holdings",
+        "excerpt": "Authorities have launched a money laundering investigation into Meridian Capital Holdings Sdn Bhd after several transactions were flagged as suspicious.",
+        "publish_date": "2025-03-10",
+        "publication": "National Herald",
+        "url": "https://example.com/articles/a2",
+        "source_confidence": "high"
+      },
+      {
+        "hit_id": "hit-3",
+        "headline": "Meridian Capital Holdings Sdn Bhd Fined for Regulatory Breach",
+        "excerpt": "The company was fined RM500,000 for a regulatory breach relating to disclosure requirements under the Companies Act.",
+        "publish_date": "2025-04-01",
+        "publication": "Financial Wire",
+        "url": "https://example.com/articles/a3",
+        "source_confidence": "medium"
+      },
+      {
+        "hit_id": "hit-4",
+        "headline": "Meridian Capital Holdings Sdn Bhd Falls Victim to Embezzlement Scheme",
+        "excerpt": "The company reported it was the victim of an embezzlement scheme carried out by a former finance manager, and has since reported the matter to police.",
+        "publish_date": "2025-02-14",
+        "publication": "Metro Times",
+        "url": "https://example.com/articles/a4",
+        "source_confidence": "medium"
+      },
+      {
+        "hit_id": "hit-5",
+        "headline": "Meridian Logistics Pte Ltd Faces Fraud Investigation",
+        "excerpt": "Singapore-based Meridian Logistics Pte Ltd, unrelated to other Meridian-branded firms, is under a fraud investigation over alleged invoice manipulation.",
+        "publish_date": "2025-01-20",
+        "publication": "Straits Business",
+        "url": "https://example.com/articles/a5",
+        "source_confidence": "low"
+      },
+      {
+        "hit_id": "hit-6",
+        "headline": "Meridian Capital Holdings Sdn Bhd Opens New Regional Office",
+        "excerpt": "Meridian Capital Holdings Sdn Bhd announced the opening of a new office in Kuala Lumpur to support its regional expansion plans.",
+        "publish_date": "2025-05-02",
+        "publication": "Regional Business Daily",
+        "url": "https://example.com/articles/a6",
+        "source_confidence": "low"
+      }
+    ]
+  },
+  {
+    "entity_id": "vendor:demo-clean",
+    "legal_name": "Clearbrook Consulting Pte Ltd",
+    "aliases": ["Clearbrook Consulting"],
+    "result_id": "fixture-result-clean",
+    "queried_at": "2025-05-10T00:00:00Z",
+    "hits": [
+      {
+        "hit_id": "hit-7",
+        "headline": "Clearbrook Consulting Pte Ltd Wins Industry Award",
+        "excerpt": "The firm was recognized for excellence in advisory services at the annual industry awards.",
+        "publish_date": "2025-04-15",
+        "publication": "Business Times",
+        "url": "https://example.com/articles/a7",
+        "source_confidence": "low"
+      },
+      {
+        "hit_id": "hit-8",
+        "headline": "Clearbrook Consulting Expands Regional Team",
+        "excerpt": "The company announced several new hires across its Singapore and Malaysia offices.",
+        "publish_date": "2025-04-20",
+        "publication": "Business Times",
+        "url": "https://example.com/articles/a8",
+        "source_confidence": "low"
+      }
+    ]
+  }
+]

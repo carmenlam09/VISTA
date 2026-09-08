@@ -1,0 +1,42 @@
+[
+  {
+    "triage_id": "fixture-report-complete-triage-1",
+    "entity_id": "vendor:report-complete",
+    "finding_reference": "module2:netreveal:fixture-report-complete-netreveal:hit-complete-netreveal-1",
+    "finding_source": "module2",
+    "finding_summary": {
+      "source": "netreveal",
+      "headline": "Sanctions list match",
+      "excerpt": "Meridian Capital Holdings Sdn Bhd matches an entry on the OFAC Specially Designated Nationals list.",
+      "url": null,
+      "hit_date": "2025-01-15",
+      "severity": "high"
+    },
+    "match_quality": {"name_similarity_score": 1.0, "nationality_match": false, "id_match": false, "ownership_overlap_score": 0.0},
+    "historical_outcome_signal": {"prior_review_found": false, "prior_outcome": "unknown"},
+    "confidence_score": 75,
+    "disposition_recommendation": "high_priority_review",
+    "rationale": "Exact name match, high-confidence sanctions hit.",
+    "generator": "deterministic-fallback"
+  },
+  {
+    "triage_id": "fixture-report-complete-triage-2",
+    "entity_id": "vendor:report-complete",
+    "finding_reference": "module3:fixture-report-complete-adverse-1",
+    "finding_source": "module3",
+    "finding_summary": {
+      "source": "adverse_news",
+      "headline": "Meridian Capital Holdings Sdn Bhd Faces Fraud Investigation",
+      "excerpt": "Regulators have opened a fraud investigation into Meridian Capital Holdings Sdn Bhd.",
+      "url": "https://example.com/articles/fraud-investigation",
+      "hit_date": "2025-03-05",
+      "severity": "high"
+    },
+    "match_quality": {"name_similarity_score": 1.0, "nationality_match": false, "id_match": false, "ownership_overlap_score": 0.0},
+    "historical_outcome_signal": {"prior_review_found": false, "prior_outcome": "unknown"},
+    "confidence_score": 65,
+    "disposition_recommendation": "needs_review",
+    "rationale": "Exact name match, moderate confidence.",
+    "generator": "deterministic-fallback"
+  }
+]

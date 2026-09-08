@@ -1,0 +1,166 @@
+# VISTA Module 5 — KYV Policy & Governance Rule Library
+#
+# Owned by compliance/risk staff, not engineering. Edit this file directly to
+# add a rule or adjust an existing one — no code changes needed.
+#
+# Each rule:
+#   rule_id:             unique identifier, cited in the draft's rationale
+#   description:         human-readable summary
+#   match:                conditions that must ALL hold for the rule to trigger
+#     themes:               risk theme(s) from Module 3's taxonomy (financial_crime,
+#                            sanctions, fraud, regulatory_breach, tax_offence, esg,
+#                            operational); empty/omitted = matches any theme
+#     min_severity:         low | medium | high; the finding's severity must be at
+#                            least this (omit for no severity floor)
+#     min_confidence_score: 0-100 floor on Module 4's confidence_score (default 0)
+#     min_disposition:      needs_review | high_priority_review; the finding's Module 4
+#                            disposition must be at least this (omit for no floor).
+#                            likely_false_positive findings are excluded before rule
+#                            matching runs at all, regardless of this setting.
+#     entity_types:         vendor | director | shareholder | ubo; empty/omitted = any
+#     nationalities:         empty/omitted = any
+#   rating_contribution:  low | medium | high — this rule's contribution to the overall
+#                         rating. The overall rating is the HIGHEST contribution among
+#                         all rules that matched (defaults to "low" if none matched).
+#   materiality_note:    reviewer-facing explanation of why this rule matters
+#   edd:
+#     level:              standard | enhanced | senior_escalation — this rule's EDD
+#                         level. Overall EDD level is the highest among matched rules.
+#     required_steps:     concrete steps; the union across all matched rules is shown
+
+version: "1.0"
+
+rules:
+  - rule_id: "SANCTIONS-01"
+    description: "Any sanctions-theme finding not dismissed as a likely false positive"
+    match:
+      themes: [sanctions]
+      min_disposition: needs_review
+    rating_contribution: medium
+    materiality_note: >
+      A sanctions-theme finding is present and has not been dismissed as noise;
+      sanctions exposure carries material regulatory risk even at moderate confidence.
+    edd:
+      level: enhanced
+      required_steps:
+        - "Re-verify the sanctions list match against the entity's full legal name and any known aliases"
+        - "Document the match/no-match determination with supporting evidence"
+
+  - rule_id: "SANCTIONS-02-HIGH-PRIORITY"
+    description: "A high-severity, high-priority-review sanctions finding at high confidence"
+    match:
+      themes: [sanctions]
+      min_severity: high
+      min_disposition: high_priority_review
+      min_confidence_score: 60
+    rating_contribution: high
+    materiality_note: >
+      A high-confidence, high-priority sanctions finding is present; sanctions exposure
+      at this confidence level is treated as materially significant on its own.
+    edd:
+      level: senior_escalation
+      required_steps:
+        - "Escalate to Compliance/MLRO before proceeding with onboarding or renewal"
+        - "Obtain a documented sanctions-screening clearance prior to any further processing"
+
+  - rule_id: "FINANCIAL-CRIME-01"
+    description: "A financial-crime-theme finding at medium confidence or above"
+    match:
+      themes: [financial_crime]
+      min_disposition: needs_review
+      min_confidence_score: 40
+    rating_contribution: medium
+    materiality_note: >
+      A financial-crime-theme finding meets the confidence threshold to affect the
+      relationship risk profile.
+    edd:
+      level: enhanced
+      required_steps:
+        - "Request source-of-funds/source-of-wealth documentation where applicable"
+        - "Review for connected-party financial crime exposure"
+
+  - rule_id: "FRAUD-01"
+    description: "A high-priority fraud-theme finding"
+    match:
+      themes: [fraud]
+      min_disposition: high_priority_review
+    rating_contribution: high
+    materiality_note: >
+      A high-priority fraud-theme finding directly bears on counterparty integrity.
+    edd:
+      level: enhanced
+      required_steps:
+        - "Obtain the entity's response/explanation for the flagged fraud-related matter"
+        - "Cross-check against internal fraud watchlists"
+
+  - rule_id: "REGULATORY-BREACH-01"
+    description: "A regulatory-breach-theme finding"
+    match:
+      themes: [regulatory_breach]
+      min_disposition: needs_review
+    rating_contribution: medium
+    materiality_note: >
+      A regulatory breach finding suggests a compliance gap that should be understood
+      before proceeding.
+    edd:
+      level: enhanced
+      required_steps:
+        - "Obtain details of the regulatory action and any remediation taken"
+
+  - rule_id: "TAX-OFFENCE-VENDOR-01"
+    description: "A tax-offence-theme finding on a vendor (corporate) entity specifically"
+    match:
+      themes: [tax_offence]
+      min_disposition: needs_review
+      entity_types: [vendor]
+    rating_contribution: medium
+    materiality_note: >
+      Tax offence findings against the corporate entity itself carry direct
+      relationship risk, distinct from findings on an individual director/UBO.
+    edd:
+      level: enhanced
+      required_steps:
+        - "Request confirmation of current tax compliance status from the vendor"
+
+  - rule_id: "ESG-01"
+    description: "An ESG-theme finding"
+    match:
+      themes: [esg]
+      min_disposition: needs_review
+    rating_contribution: low
+    materiality_note: >
+      ESG-theme findings are noted for relationship context but do not independently
+      drive elevated due diligence absent other findings.
+    edd:
+      level: standard
+      required_steps:
+        - "Note the ESG concern in the vendor file for periodic review"
+
+  - rule_id: "OPERATIONAL-01"
+    description: "A high-priority operational-theme finding"
+    match:
+      themes: [operational]
+      min_disposition: high_priority_review
+    rating_contribution: medium
+    materiality_note: >
+      A high-priority operational finding (e.g. insolvency proceedings) can affect the
+      vendor's ability to perform, independent of financial-crime risk.
+    edd:
+      level: enhanced
+      required_steps:
+        - "Assess operational continuity risk and any contractual mitigations"
+
+  - rule_id: "GENERAL-HIGH-CONFIDENCE-01"
+    description: "Any surviving finding with high priority and high confidence, regardless of theme"
+    match:
+      themes: []
+      min_disposition: high_priority_review
+      min_confidence_score: 70
+    rating_contribution: high
+    materiality_note: >
+      A high-confidence, high-priority finding is present; whatever the specific theme,
+      a finding this strong warrants senior review before proceeding.
+    edd:
+      level: senior_escalation
+      required_steps:
+        - "Escalate to senior management for a risk-acceptance decision"

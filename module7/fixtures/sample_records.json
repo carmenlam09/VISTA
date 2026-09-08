@@ -1,0 +1,72 @@
+[
+  {
+    "entity_id": "director:knowledge-1",
+    "record_type": "false_positive_decision",
+    "days_ago": 60,
+    "source_module": "module4",
+    "source_reference": "fixture-fp-1",
+    "summary_text": "Reviewer confirmed this sanctions watchlist match was a false positive due to a name collision. The flagged individual shares the same name as the director but has a different nationality and no matching identification number.",
+    "tags": ["false_positive", "name_collision", "sanctions"],
+    "payload": {"disposition": "confirmed_false_positive", "original_recommendation": "needs_review"}
+  },
+  {
+    "entity_id": "director:knowledge-1",
+    "record_type": "adverse_news_assessment",
+    "days_ago": 90,
+    "source_module": "module3",
+    "source_reference": "fixture-adverse-1",
+    "summary_text": "Adverse media review found a credible fraud investigation report directly naming this director in connection with a corporate fraud case.",
+    "tags": ["fraud"],
+    "payload": {"themes": ["fraud"], "severity": "high"}
+  },
+  {
+    "entity_id": "director:knowledge-1",
+    "record_type": "edd_outcome",
+    "days_ago": 45,
+    "source_module": "module5",
+    "source_reference": "fixture-edd-1",
+    "summary_text": "Enhanced due diligence completed for this director following the sanctions name-collision review. No further action required after clearance was documented.",
+    "tags": ["enhanced", "cleared"],
+    "payload": {"level": "enhanced"}
+  },
+  {
+    "entity_id": "vendor:knowledge-2",
+    "record_type": "false_positive_decision",
+    "days_ago": 120,
+    "source_module": "module4",
+    "source_reference": "fixture-fp-2",
+    "summary_text": "Reviewer confirmed a tax arrears public record hit was a true hit. The vendor has an outstanding tax dispute with the tax authority.",
+    "tags": ["true_hit", "tax_offence"],
+    "payload": {"disposition": "confirmed_true_hit"}
+  },
+  {
+    "entity_id": "vendor:knowledge-3",
+    "record_type": "kyv_review",
+    "days_ago": 200,
+    "source_module": "module2",
+    "source_reference": "fixture-kyv-1",
+    "summary_text": "Routine annual KYV review completed with no adverse findings. Vendor remains in good standing with no outstanding concerns.",
+    "tags": ["clean"],
+    "payload": {}
+  },
+  {
+    "entity_id": "vendor:knowledge-4",
+    "record_type": "approval_record",
+    "days_ago": 30,
+    "source_module": "module6",
+    "source_reference": "fixture-approval-1",
+    "summary_text": "KYV report approved by senior reviewer following standard due diligence with no elevated risk factors identified.",
+    "tags": ["approved", "standard"],
+    "payload": {"report_version": 1}
+  },
+  {
+    "entity_id": "vendor:knowledge-5",
+    "record_type": "adverse_news_assessment",
+    "days_ago": 2000,
+    "source_module": "module3",
+    "source_reference": "fixture-adverse-old",
+    "summary_text": "Historical adverse media review from several years ago, well outside the standard retention window for day-to-day search results.",
+    "tags": ["fraud"],
+    "payload": {"themes": ["fraud"], "severity": "medium"}
+  }
+]

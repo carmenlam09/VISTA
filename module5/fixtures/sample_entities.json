@@ -1,0 +1,56 @@
+[
+  {
+    "entity_id": "vendor:fixture-nomatch",
+    "entity_type": "vendor",
+    "legal_name": "Clearbrook Consulting Pte Ltd",
+    "aliases": [],
+    "id_numbers": [],
+    "nationality": "Singapore",
+    "related_entities": []
+  },
+  {
+    "entity_id": "vendor:fixture-single",
+    "entity_type": "vendor",
+    "legal_name": "Greenfield Agritech Sdn Bhd",
+    "aliases": [],
+    "id_numbers": [],
+    "nationality": "Malaysia",
+    "related_entities": []
+  },
+  {
+    "entity_id": "vendor:fixture-overlap",
+    "entity_type": "vendor",
+    "legal_name": "Meridian Capital Holdings Sdn Bhd",
+    "aliases": [],
+    "id_numbers": [],
+    "nationality": "Malaysia",
+    "related_entities": []
+  },
+  {
+    "entity_id": "vendor:fixture-excluded",
+    "entity_type": "vendor",
+    "legal_name": "Silverline Trading Co",
+    "aliases": [],
+    "id_numbers": [],
+    "nationality": "Malaysia",
+    "related_entities": []
+  },
+  {
+    "entity_id": "vendor:fixture-taxvendor",
+    "entity_type": "vendor",
+    "legal_name": "Oakridge Industries Sdn Bhd",
+    "aliases": [],
+    "id_numbers": [],
+    "nationality": "Malaysia",
+    "related_entities": []
+  },
+  {
+    "entity_id": "director:fixture-taxdirector",
+    "entity_type": "director",
+    "legal_name": "Farah Zulkifli",
+    "aliases": [],
+    "id_numbers": [],
+    "nationality": "Malaysia",
+    "related_entities": []
+  }
+]

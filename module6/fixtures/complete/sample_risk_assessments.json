@@ -1,0 +1,42 @@
+[
+  {
+    "draft_id": "fixture-report-complete-assessment-1",
+    "entity_id": "vendor:report-complete",
+    "draft_status": "reviewer_edited",
+    "overall_risk_rating": "high",
+    "matched_rules": [
+      {
+        "rule_id": "SANCTIONS-02-HIGH-PRIORITY",
+        "description": "A high-severity, high-priority-review sanctions finding at high confidence",
+        "triggering_finding_references": ["module2:netreveal:fixture-report-complete-netreveal:hit-complete-netreveal-1"],
+        "contribution": "high rating / senior_escalation EDD",
+        "rating_contribution": "high",
+        "edd_level": "senior_escalation"
+      },
+      {
+        "rule_id": "FRAUD-01",
+        "description": "A high-priority fraud-theme finding",
+        "triggering_finding_references": ["module3:fixture-report-complete-adverse-1"],
+        "contribution": "high rating / enhanced EDD",
+        "rating_contribution": "high",
+        "edd_level": "enhanced"
+      }
+    ],
+    "materiality_justification": "Meridian Capital Holdings Sdn Bhd's overall risk rating is high, driven by 2 matched policy rule(s): SANCTIONS-02-HIGH-PRIORITY (triggered by module2:netreveal:fixture-report-complete-netreveal:hit-complete-netreveal-1) and FRAUD-01 (triggered by module3:fixture-report-complete-adverse-1). Reviewer note: confirmed against internal watchlist re-check.",
+    "edd_recommendation": {
+      "level": "senior_escalation",
+      "required_steps": [
+        "Escalate to Compliance/MLRO before proceeding with onboarding or renewal",
+        "Obtain a documented sanctions-screening clearance prior to any further processing",
+        "Obtain the entity's response/explanation for the flagged fraud-related matter"
+      ]
+    },
+    "contributing_findings": [
+      "module2:netreveal:fixture-report-complete-netreveal:hit-complete-netreveal-1",
+      "module3:fixture-report-complete-adverse-1"
+    ],
+    "excluded_findings": [],
+    "generator": "deterministic-fallback",
+    "created_at": "2025-05-11T00:00:00Z"
+  }
+]

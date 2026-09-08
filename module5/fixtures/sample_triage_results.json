@@ -1,0 +1,142 @@
+[
+  {
+    "triage_id": "triage-nomatch-1",
+    "entity_id": "vendor:fixture-nomatch",
+    "finding_reference": "module2:ctos:fixture-result-nomatch-ctos:hit-nomatch-1",
+    "finding_source": "module2",
+    "finding_summary": {
+      "source": "ctos",
+      "headline": "Minor credit inquiry noted",
+      "excerpt": "A minor credit inquiry was logged for Clearbrook Consulting Pte Ltd; no adverse action taken.",
+      "url": null,
+      "hit_date": "2025-02-01",
+      "severity": "low"
+    },
+    "match_quality": {},
+    "historical_outcome_signal": {"prior_review_found": false, "prior_outcome": "unknown"},
+    "confidence_score": 45,
+    "disposition_recommendation": "needs_review",
+    "rationale": "Weak signal, no strong corroboration.",
+    "generator": "deterministic-fallback"
+  },
+  {
+    "triage_id": "triage-single-1",
+    "entity_id": "vendor:fixture-single",
+    "finding_reference": "module3:finding-single-1",
+    "finding_source": "module3",
+    "finding_summary": {
+      "source": "adverse_news",
+      "headline": "Greenfield Agritech Faces Labor Rights Scrutiny",
+      "excerpt": "An NGO report raised labor rights concerns at a Greenfield Agritech Sdn Bhd facility.",
+      "url": "https://example.com/articles/labor-rights",
+      "hit_date": "2025-03-01",
+      "severity": "medium"
+    },
+    "match_quality": {},
+    "historical_outcome_signal": {"prior_review_found": false, "prior_outcome": "unknown"},
+    "confidence_score": 50,
+    "disposition_recommendation": "needs_review",
+    "rationale": "Name match with moderate corroboration.",
+    "generator": "deterministic-fallback"
+  },
+  {
+    "triage_id": "triage-overlap-1",
+    "entity_id": "vendor:fixture-overlap",
+    "finding_reference": "module2:netreveal:fixture-result-overlap-netreveal:hit-overlap-1",
+    "finding_source": "module2",
+    "finding_summary": {
+      "source": "netreveal",
+      "headline": "Sanctions list match",
+      "excerpt": "Meridian Capital Holdings Sdn Bhd matches an entry on the OFAC Specially Designated Nationals list.",
+      "url": null,
+      "hit_date": "2025-01-15",
+      "severity": "high"
+    },
+    "match_quality": {},
+    "historical_outcome_signal": {"prior_review_found": false, "prior_outcome": "unknown"},
+    "confidence_score": 75,
+    "disposition_recommendation": "high_priority_review",
+    "rationale": "Exact name match, high-confidence sanctions hit.",
+    "generator": "deterministic-fallback"
+  },
+  {
+    "triage_id": "triage-excluded-fp",
+    "entity_id": "vendor:fixture-excluded",
+    "finding_reference": "module2:ctos:fixture-result-excluded-ctos:hit-excluded-1",
+    "finding_source": "module2",
+    "finding_summary": {
+      "source": "ctos",
+      "headline": "Adverse credit event",
+      "excerpt": "Silverline Trading Co reported a late payment; subsequently determined to be a data entry error by the reporting agency.",
+      "url": null,
+      "hit_date": "2024-11-02",
+      "severity": "medium"
+    },
+    "match_quality": {},
+    "historical_outcome_signal": {"prior_review_found": false, "prior_outcome": "unknown"},
+    "confidence_score": 20,
+    "disposition_recommendation": "likely_false_positive",
+    "rationale": "Weak signal, later explained as a reporting error.",
+    "generator": "deterministic-fallback"
+  },
+  {
+    "triage_id": "triage-excluded-genuine",
+    "entity_id": "vendor:fixture-excluded",
+    "finding_reference": "module2:public_records:fixture-result-excluded-public:hit-excluded-2",
+    "finding_source": "module2",
+    "finding_summary": {
+      "source": "public_records",
+      "headline": "Regulatory breach on record",
+      "excerpt": "Silverline Trading Co was found in breach of licensing conditions by the regulator.",
+      "url": null,
+      "hit_date": "2025-01-08",
+      "severity": "medium"
+    },
+    "match_quality": {},
+    "historical_outcome_signal": {"prior_review_found": false, "prior_outcome": "unknown"},
+    "confidence_score": 55,
+    "disposition_recommendation": "needs_review",
+    "rationale": "Genuine name match, public registry record.",
+    "generator": "deterministic-fallback"
+  },
+  {
+    "triage_id": "triage-taxvendor-1",
+    "entity_id": "vendor:fixture-taxvendor",
+    "finding_reference": "module2:public_records:fixture-result-taxvendor-public:hit-taxvendor-1",
+    "finding_source": "module2",
+    "finding_summary": {
+      "source": "public_records",
+      "headline": "Outstanding tax arrears",
+      "excerpt": "Public tax registry lists outstanding arrears for Oakridge Industries Sdn Bhd.",
+      "url": null,
+      "hit_date": "2025-01-08",
+      "severity": "medium"
+    },
+    "match_quality": {},
+    "historical_outcome_signal": {"prior_review_found": false, "prior_outcome": "unknown"},
+    "confidence_score": 50,
+    "disposition_recommendation": "needs_review",
+    "rationale": "Genuine name match, public tax registry.",
+    "generator": "deterministic-fallback"
+  },
+  {
+    "triage_id": "triage-taxdirector-1",
+    "entity_id": "director:fixture-taxdirector",
+    "finding_reference": "module2:public_records:fixture-result-taxdirector-public:hit-taxdirector-1",
+    "finding_source": "module2",
+    "finding_summary": {
+      "source": "public_records",
+      "headline": "Outstanding tax arrears",
+      "excerpt": "Public tax registry lists outstanding personal tax arrears for Farah Zulkifli.",
+      "url": null,
+      "hit_date": "2025-01-08",
+      "severity": "medium"
+    },
+    "match_quality": {},
+    "historical_outcome_signal": {"prior_review_found": false, "prior_outcome": "unknown"},
+    "confidence_score": 50,
+    "disposition_recommendation": "needs_review",
+    "rationale": "Genuine name match, public tax registry.",
+    "generator": "deterministic-fallback"
+  }
+]

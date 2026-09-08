@@ -1,0 +1,21 @@
+[
+  {
+    "finding_id": "fixture-report-complete-adverse-1",
+    "entity_id": "vendor:report-complete",
+    "themes": ["fraud"],
+    "severity": "high",
+    "confidence": "medium",
+    "rationale": "Matched keyword 'fraud investigation' in the headline; not negated by victim/exoneration framing.",
+    "matched_keywords": ["fraud investigation"],
+    "source_hit": {
+      "result_id": "fixture-report-complete-adverse-result",
+      "hit_id": "hit-complete-adverse-1",
+      "headline": "Meridian Capital Holdings Sdn Bhd Faces Fraud Investigation",
+      "publication": "Financial Wire",
+      "publish_date": "2025-03-05",
+      "url": "https://example.com/articles/fraud-investigation",
+      "excerpt": "Regulators have opened a fraud investigation into Meridian Capital Holdings Sdn Bhd."
+    },
+    "generator": "deterministic-fallback"
+  }
+]
